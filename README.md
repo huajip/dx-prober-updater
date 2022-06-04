@@ -5,7 +5,7 @@
 
 ## 抓包工具配合快捷指令导分办法
 
-```https://www.icloud.com/shortcuts/2fed1005f4014349a990ddcc47fb9f2b```
+`https://www.icloud.com/shortcuts/2fed1005f4014349a990ddcc47fb9f2b`
 
 首先先导入这个 
 
@@ -13,7 +13,7 @@
 
 然后使用Surge等抓包工具 打开MitM 
 
-主机名增加```maimai.wahlap.com```
+主机名增加`maimai.wahlap.com`
 
 SSL抓包如何配置请自行百度
 
@@ -27,9 +27,20 @@ SSL抓包如何配置请自行百度
 
 在抓包工具内找到
 
-```https://maimai.wahlap.com/maimai-mobile/record/musicGenre/search/?genre=99&diff=3```
+`https://maimai.wahlap.com/maimai-mobile/record/musicGenre/search/?genre=99&diff=3`
 
 这样的地址
 
 然后在响应内选择导出 选择上面提到的"将网页更新至查分器" 然后输入账号密码 即可
 
+## <span id="FAQ">常见问题（FAQ）</span>
+
+> api使用怎么用
+
+`https://prober.jinale.com/diving-fish/updateRecord` 使用POST直接把username password 和file传进去即可
+
+file是你的网页本身
+
+### Disclaimer
+
+本传分器与华立、SEGA 等公司无任何关系，注册商标所有权归相关品牌所有。请勿使用本代码用于网络攻击或其他滥用行为。

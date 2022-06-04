@@ -5,9 +5,7 @@
 
 ### 抓包工具配合快捷指令导分办法
 
-`https://www.icloud.com/shortcuts/2fed1005f4014349a990ddcc47fb9f2b`
-
-首先先导入这个 
+首先先导入这个[快捷指令](https://www.icloud.com/shortcuts/2fed1005f4014349a990ddcc47fb9f2b)
 
 如果无法导入 请运行一下任意一个快捷指令 再进设置→快捷指令 打开私人共享
 

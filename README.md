@@ -33,7 +33,7 @@ SSL抓包如何配置请自行百度
 
 ## <span id="FAQ">常见问题（FAQ）</span>
 
-> api使用怎么用
+> api怎么用
 
 `https://prober.jinale.com/diving-fish/updateRecord` 使用POST直接把username password 和file传进去即可
 

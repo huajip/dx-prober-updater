@@ -34,10 +34,16 @@ SSL抓包如何配置请自行百度
 ### 直接使用JS注入网页导分的方法
 
 如果您正在使用Surge 在配置文件的`[Script]`底下增加
+
 ```舞萌DX查分器传分 = type=http-response,pattern=maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy),requires-body=1,max-size=-1,script-path=https://prober.jinale.com/js/score_upload_inject_surge.js,script-update-interval=0```
 
 如果您正在使用Quantumult X 在配置文件的`[rewrite_local]`底下增加
+
 ```https://maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) url response-body </body> response-body <script src="https://prober.jinale.com/js/score_upload_new.min.js"></script></body>```
+
+然后 进入舞萌DX的`我的记录`
+
+应该可以看到右上角多出了一个按钮 进去输入密码即可
 
 
 ## <span id="FAQ">常见问题（FAQ）</span>

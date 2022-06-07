@@ -13,6 +13,11 @@
 
 ```https://maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) url response-body </body> response-body <script src="https://prober.jinale.com/js/score_upload_new.min.js"></script></body>```
 
+如果您正在使用Loon 在配置文件的`[Script]`底下增加
+
+```http-response maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) script-path=https://prober.jinale.com/js/score_upload_inject_surge.js, requires-body=true, timeout=10, tag=舞萌DX查分器传分```
+
+
 然后 进入舞萌DX的`我的记录`
 
 应该可以看到右上角多出了一个按钮 进去输入密码即可

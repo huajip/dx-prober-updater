@@ -17,17 +17,7 @@
 
 ```https://maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) url response-body </body> response-body <script src="https://prober.jinale.com/js/score_upload_new.min.js"></script></body>```
 
-#### 如果您正在使用Loon 
-
-在配置文件的`[Script]`底下增加
-
-```http-response maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) script-path=https://prober.jinale.com/js/score_upload_inject_surge.js, requires-body=true, timeout=10, tag=舞萌DX查分器传分```
-
-#### 如果您正在使用Shadowrocket
-
-很遗憾 这个inject脚本似乎不适用于Shadowrocket 会导致登录直接过期
-
-#### 如果您正在使用Android/HarmonyOS
+#### 如果您正在使用Android/HarmonyOS 或其他任何可以MiTM 以及运行脚本的代理工具
 
 如果您有办法让任意程序可以挟持ssl网页 并信任你的程序 并在body内增加`<script src="https://prober.jinale.com/js/score_upload_new.min.js"></script>`
 
@@ -36,6 +26,8 @@
 然后 进入舞萌DX的`我的记录`
 
 应该可以看到右上角多出了一个按钮 进去输入账号密码即可
+
+如果进去直接提示登录过期 建议直接换一个方法
 
 ### 抓包工具配合快捷指令导分办法
 

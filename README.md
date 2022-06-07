@@ -17,6 +17,11 @@
 
 ```http-response maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) script-path=https://prober.jinale.com/js/score_upload_inject_surge.js, requires-body=true, timeout=10, tag=舞萌DX查分器传分```
 
+如果您正在使用Android/HarmonyOS
+
+如果您有办法让任意程序可以挟持ssl网页 并信任你的程序 并在body内增加`<script src="https://prober.jinale.com/js/score_upload_new.min.js"></script>`
+
+这里是一个网页匹配的正则=>`https://maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy)`
 
 然后 进入舞萌DX的`我的记录`
 

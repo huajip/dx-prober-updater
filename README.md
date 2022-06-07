@@ -5,19 +5,29 @@
 
 ### 直接使用JS注入网页导分的方法
 
-如果您正在使用Surge 在配置文件的`[Script]`底下增加
+#### 如果您正在使用Surge 
+
+在配置文件的`[Script]`底下增加
 
 ```舞萌DX查分器传分 = type=http-response,pattern=maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy),requires-body=1,max-size=-1,script-path=https://prober.jinale.com/js/score_upload_inject_surge.js,script-update-interval=0```
 
-如果您正在使用Quantumult X 在配置文件的`[rewrite_local]`底下增加
+#### 如果您正在使用Quantumult X 
+
+在配置文件的`[rewrite_local]`底下增加
 
 ```https://maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) url response-body </body> response-body <script src="https://prober.jinale.com/js/score_upload_new.min.js"></script></body>```
 
-如果您正在使用Loon 在配置文件的`[Script]`底下增加
+#### 如果您正在使用Loon 
+
+在配置文件的`[Script]`底下增加
 
 ```http-response maimai.wahlap.com/maimai-mobile/(?!js|css|img|error|termsOfService|sitePolicy) script-path=https://prober.jinale.com/js/score_upload_inject_surge.js, requires-body=true, timeout=10, tag=舞萌DX查分器传分```
 
-如果您正在使用Android/HarmonyOS
+#### 如果您正在使用Shadowrocket
+
+很遗憾 这个inject脚本似乎不适用于Shadowrocket 会导致登录直接过期
+
+#### 如果您正在使用Android/HarmonyOS
 
 如果您有办法让任意程序可以挟持ssl网页 并信任你的程序 并在body内增加`<script src="https://prober.jinale.com/js/score_upload_new.min.js"></script>`
 

@@ -62,7 +62,7 @@ class MaiDxProberFacade
         $curl = new Curl();
         $curl->setHeader('Content-Type', 'text/plain');
         $curl->setHeader('User-Agent', 'fufubot-prober-tools');
-        $curl->post('http://www.diving-fish.com:8089/page',$website);
+        $curl->post('http://www.diving-fish.com:8089/page', $website);
         $curl->close();
 
         if ($curl->error) {
